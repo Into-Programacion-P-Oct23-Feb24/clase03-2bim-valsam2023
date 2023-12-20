@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo02 {
+public class Ejemplo022 {
 
     /**
      * @param args the command line arguments
@@ -34,6 +34,9 @@ public class Ejemplo02 {
                 System.out.printf("Ingrese un numero en la posicion [%d]"
                         + "[%d]\n", f, c);
                 valor = entrada.nextInt();
+                if (valor % 2 == 0 && valor >= 10){
+                    valor = 0;
+                }
                 arreglo1[f][c] = valor;
             }
         }
